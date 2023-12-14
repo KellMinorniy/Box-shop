@@ -10,5 +10,8 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    'vue/no-multiple-template-root': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
 }
