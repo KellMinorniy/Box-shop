@@ -1,9 +1,13 @@
 <script setup>
 import Card from '../components/CardShop.vue'
+import { ref } from 'vue'
 
 defineProps({
-  items: Array
+  items: Array,
+  selectedCategory: String
 })
+
+
 </script>
 
 <template>
